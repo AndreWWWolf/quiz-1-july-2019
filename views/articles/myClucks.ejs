@@ -1,0 +1,20 @@
+<%- include("../partials/header") %>
+
+<h1>All Of My Clucks</h1>
+<link rel="stylesheet" href="./styles/main.css">
+<script src="/scripts/main.js"></script>
+<div>
+<% for (let i of clucks) {%>
+    <div>
+      <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/front-facing-baby-chick_1f425.png" style="width:42px;height:42px;border:0;">
+    </div>
+      <div class="cluckbox">
+      <p> <%= i.username %> </p>
+      <p> <%= i.content %> </p>
+      <img class="picture" src="<%= i.image_url %>"/>
+      <p> <%= i.created_at %> </p>
+    </div>
+<% }  %>
+</div>
+
+<%- include("../partials/footer") %>

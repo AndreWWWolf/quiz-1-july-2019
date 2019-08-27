@@ -1,0 +1,52 @@
+html {
+    --border-radius: 5px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  main {
+    padding: 10px;
+  }
+  
+  * {
+    font-family: inherit;
+  }
+  
+  input,
+  textarea {
+    font-size: inherit;
+    border-radius: var(--border-radius);
+    border: 1px solid grey;
+    padding: calc(1rem / 2);
+  }
+  
+  .welcome-img {
+    border-radius: var(--border-radius);
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar > * {
+    padding: 10px;
+  }
+  
+  .cluckbox {
+    border: 1px solid black;
+    max-width: 75%;
+  }
+
+  .picture {
+    width: 40em;
+  }
+
+  p, .cluckbox {
+    text-decoration: aqua;
+  }
+
+
