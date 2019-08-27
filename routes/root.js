@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const knex = require("../db/client");
+const moment= require('moment');
+moment().format();
 
 //Routes to Pages
 router.get('/', (request, response) => {

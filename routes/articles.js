@@ -16,7 +16,7 @@ router.post("/", (req, res) => {
       username: req.cookies.username,
       content: req.body.content,
       image_url: req.body.image_url,
-      created_at: req.body.createdAt
+      created_at: moment(req.body.createdAt).fromNow()
     })
     .returning("*") // --- END SQL
     .then(() => {

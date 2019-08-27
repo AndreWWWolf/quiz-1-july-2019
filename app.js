@@ -5,6 +5,9 @@ const path = require('path');
 const methodOverride = require('method-override');
 const rootRouter = require('./routes/root');
 const articlesRouter = require('./routes/articles');
+const moment = require('moment');
+moment().format();
+
 
 const app = express();
 
